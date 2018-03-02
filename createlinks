@@ -34,3 +34,6 @@ event_templates("nethserver-rh-php71-php-fpm-update", qw(
   /etc/opt/rh/rh-php71/php-fpm.d/z_nethserver.conf
 ));
 
+event_services("nethserver-rh-php71-php-fpm-update", qw(
+  rh-php71-php-fpm restart
+));
