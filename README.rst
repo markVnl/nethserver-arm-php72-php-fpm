@@ -3,8 +3,8 @@ nethserver-rh-php71-php-fpm
 ===========================
 
 Configure default installation of PHP 7.1 running on FPM.
-The default configuration of FPM is from upstream and can freely change 
-(no template): ``/etc/opt/rh/rh-php71/php-fpm.d/www.conf``.
+The default configuration of FPM is from upstream and has
+been customized to listen on port 9001 (template: ``/etc/opt/rh/rh-php71/php-fpm.d/z_nethserver.conf``).
 
 Adding new configuration
 ========================
