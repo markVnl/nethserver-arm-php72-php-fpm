@@ -23,17 +23,17 @@ use strict;
 use esmith::Build::CreateLinks qw(:all);
 
 #
-# nethserver-rh-php71-php-fpm event
+# nethserver-arm-php72-php-fpm event
 #
 
-event_actions('nethserver-rh-php71-php-fpm-update', qw(
+event_actions('nethserver-arm-php72-php-fpm-update', qw(
     initialize-default-databases        00
 ));
 
-event_templates("nethserver-rh-php71-php-fpm-update", qw(
-  /etc/opt/rh/rh-php71/php-fpm.d/z_nethserver.conf
+event_templates("nethserver-arm-php72-php-fpm-update", qw(
+  /etc/opt/rh/php72/php-fpm.d/z_nethserver.conf
 ));
 
-event_services("nethserver-rh-php71-php-fpm-update", qw(
-  rh-php71-php-fpm restart
+event_services("nethserver-arm-php72-php-fpm-update", qw(
+ php72-php-fpm restart
 ));

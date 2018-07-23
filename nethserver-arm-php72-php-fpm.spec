@@ -1,17 +1,17 @@
-Name: nethserver-rh-php71-php-fpm
+Name: nethserver-arm-php72-php-fpm
 Version: 1.0.0
 Release: 1%{?dist}
-Summary: NethServer rh-php71-php-fpm configuration
+Summary: NethServer arm-php72-php-fpm configuration
 License: GPL
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 
 BuildRequires: nethserver-devtools
 
-Requires: rh-php71, rh-php71-php-fpm
+Requires:php72, php72-php-fpm
 
 %description
-Basic support for PHP 7.1 using SCL
+Basic support for PHP 7.2 using SCL
 
 %prep
 %setup -q

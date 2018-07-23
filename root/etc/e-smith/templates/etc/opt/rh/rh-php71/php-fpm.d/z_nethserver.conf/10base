@@ -1,6 +1,0 @@
-{
-    my $port = ${'rh-php71-php-fpm'}{TCPPorts} || 9001;
-
-    $OUT='[www]
-listen = 127.0.0.1:'.$port;
-}
