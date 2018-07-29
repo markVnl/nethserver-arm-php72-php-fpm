@@ -1,6 +1,6 @@
 Name: nethserver-arm-php72-php-fpm
 Version: 1.0.0
-Release: 1%{?dist}
+Release: 2arm%{?dist}
 Summary: NethServer arm-php72-php-fpm configuration
 License: GPL
 Source0: %{name}-%{version}.tar.gz
@@ -32,6 +32,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Sun Jul 29 2018 Mark Verlinde <mark.verlinde@gmail.com> - 1.0.0-2arm
+- Adjust to PHP72 SCL for armhfp
+
 * Tue Mar 20 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.0-1
 - Nextcloud: upgrade to v13 & optimizations - NethServer/dev#5427
 
